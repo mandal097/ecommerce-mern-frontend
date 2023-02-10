@@ -1,0 +1,96 @@
+nav {
+  height: 5.5rem;
+  .navbar {
+    width: 100%;
+    height: 5.5rem;
+    background-color: var(--bgDark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    gap: 3rem;
+    border-bottom: 1px solid var(--border);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    .logo {
+      width: auto;
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      border: 1px solid transparent;
+      cursor: pointer;
+      color: var(--btn);
+      gap: 0.6rem;
+      padding: 0 1rem;
+      .icon {
+        font-size: 4rem;
+        color: var(--btn);
+      }
+      span {
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      &:hover {
+        border-color: var(--border);
+      }
+    }
+    .middle {
+      height: 70%;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background-color: var(--bgLight);
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      .icon {
+        font-size: 3rem;
+        color: var(--text);
+      }
+      input {
+        font-size: 1.7rem;
+        flex: 1;
+        color: var(--textSoft);
+      }
+    }
+    .right {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      button {
+        height: 4rem;
+        background-color: var(--bgLight);
+        width: 4rem;
+        color: var(--text);
+        border-radius: 50%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+        .icon {
+          font-size: 2.5rem;
+          margin-right: 0.5rem;
+        }
+        span {
+          font-size: 1.5rem;
+        }
+        &:hover {
+          background-color: var(--bgLighter);
+        }
+      }
+      .auth_btn {
+        width: 10rem;
+        border-radius: 0.5rem;
+        height: auto;
+        padding: 1rem 0;
+        font-size: 1.6rem;
+        color: var(--text);
+      }
+    }
+  }
+}
