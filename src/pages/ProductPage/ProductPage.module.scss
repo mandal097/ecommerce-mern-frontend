@@ -1,8 +1,11 @@
-.product_page{
-    height: 30vh;
-    margin: 2rem auto;
-    h1{
-        font-size: 3rem;
-        color: var(--text);
+.product_page {
+  height: 110vh;
+  margin: 0rem auto;
+  .wrapper {
+    border: 1px solid red;
+    h1 {
+      font-size: 3rem;
+      color: var(--text);
     }
+  }
 }
