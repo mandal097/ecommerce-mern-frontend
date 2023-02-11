@@ -83,6 +83,23 @@ nav {
           background-color: var(--bgLighter);
         }
       }
+      .cart_btn {
+        position: relative;
+        .badge {
+          font-size: 1.2rem;
+          background-color: var(--btn);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: -0.2rem;
+          right: -0.4rem;
+          padding: 0.2rem;
+          border-radius: 10rem;
+          width: 1.8rem;
+          height: 1.8rem;
+        }
+      }
       .auth_btn {
         width: 10rem;
         border-radius: 0.5rem;

@@ -16,7 +16,7 @@ const Navbar = () => {
     return (
         <nav>
             <div className={styles.navbar}>
-                <div className={styles.logo}  onClick={()=>navigate('/')}>
+                <div className={styles.logo} onClick={() => navigate('/')}>
                     <QqOutlined className={styles.icon} />
                     <span>Shopname</span>
                 </div>
@@ -37,8 +37,11 @@ const Navbar = () => {
 
                     }
 
-                    <button ><ShoppingCartOutlined className={styles.icon} onClick={()=>navigate('/cart')}/></button>
-                    <button  onClick={()=>navigate('/my-profile')}>
+                    <button className={styles.cart_btn} >
+                        <ShoppingCartOutlined  className={styles.icon} onClick={() => navigate('/cart')} />
+                        <div className={styles.badge}>1</div>
+                    </button>
+                    <button onClick={() => navigate('/my-profile')}>
                         <img src={user?.profilePic ? user.profilePic : 'https://img.freepik.com/free-psd/3d-illustration-person_23-2149436192.jpg?size=338&ext=jpg&ga=GA1.1.148670595.1674319787'} alt="" />
                     </button>
                 </div>
