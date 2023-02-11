@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import styles from './ProductCard.module.scss';
 import { HeartFilled, QqOutlined, StarFilled } from '@ant-design/icons'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import { capitalizeFirstLetter } from '../../helpers/strings';
+import { percentage } from '../../helpers/calPercentage';
 
 const ProductCard = ({ product, width, padding }) => {
     const navigate = useNavigate();
@@ -26,9 +27,9 @@ const ProductCard = ({ product, width, padding }) => {
     return (
         <>
             <ToastContainer className='toaster' />
-            <div className={styles.product_card} style={{ width: width, padding: padding }}>
+            <div className={styles.product_card} style={{ width: width, padding: padding }} >
                 <div className={styles.wrapper}>
-                    <div className={styles.img} onClick={() => navigate(`/product/kuch-bhi-lele-yaha-se`)}>
+                    <div className={styles.img} onClick={() => navigate(`/product/${product?.id}`)}>
                         <div className={`${styles.wishlist} ${added && 'pop'}`} onClick={handleWishlist} >
                             <HeartFilled className={`${styles.icon} ${added && styles.added} `} />
                         </div>
@@ -37,7 +38,7 @@ const ProductCard = ({ product, width, padding }) => {
 
                     <div className={styles.details}>
                         <Link
-                            to={`/product/kuch-bhi-filhal-haha`}
+                            to={`/product/${product?.id}`}
                             className={styles.name}>{product?.p_name}</Link>
                         <div className={styles.ratings}>
                             <div className={styles.stars}>
@@ -52,10 +53,10 @@ const ProductCard = ({ product, width, padding }) => {
                         <div className={styles.prices}>
                             <span>₹{product?.selling_price}</span>
                             <strike>₹{product?.mrp}</strike>
-                            <small>58% off</small>
+                            <small>{percentage(product)}% off</small>
                         </div>
                         <div className={styles.btns}>
-                            <button onClick={() => navigate(`/product/kuch-bhi-lele-yaha-se`)}>Add to cart</button>
+                            <button onClick={() => navigate(`/product/${product?.id}`)}>Add to cart</button>
                             <button>Buy now</button>
                         </div>
                         <div className={styles.delivery_stat}><span>{capitalizeFirstLetter("free delivery")}</span></div>

@@ -1,24 +1,27 @@
 import React from 'react';
 import styles from './PriceInfo.module.scss';
+import {percentage} from '../../helpers/calPercentage';
 
-const PriceInfo = () => {
+const PriceInfo = ({ product, perc }) => {
+
+
     return (
         <div className={styles.price_info}>
             <b>Prices</b>
             <div className={styles.prices}>
                 <p>Maximum Retail Price</p>
-                <strike>₹ 999</strike>
+                <strike>₹ {product?.mrp}</strike>
             </div>
             <div className={styles.prices}>
                 <p>Selling Price</p>
-                <strike>₹ 250</strike>
+                <strike>₹ {product?.selling_price}</strike>
             </div>
             <div className={styles.prices}>
                 <p style={{ color: 'var(--textSoft)' }}>Special Price</p>
-                <p style={{ color: 'var(--textSoft)' }}>₹ 149</p>
+                <p style={{ color: 'var(--textSoft)' }}>₹ {product?.selling_price}</p>
             </div>
             <div className={styles.discount_per}>
-                <p>Overall you save ₹850 (85%) on this product</p>
+                <p>Overall you save ₹{product?.mrp - product.selling_price} ({percentage(product)})% on this product</p>
             </div>
         </div>
     )

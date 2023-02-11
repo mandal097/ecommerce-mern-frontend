@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Categories from '../../components/Categories/Categories';
 import styles from './ProductPage.module.scss';
 import {
@@ -12,7 +12,25 @@ import {
 import PriceInfo from '../../components/PriceInfo/PriceInfo';
 import Ratings from '../../components/Ratings/Ratings';
 import ProductSlides from '../../components/ProductSlides/ProductSlides';
+import { useLocation } from 'react-router-dom';
+import { data } from '../../dummydata/data';
+import { percentage } from '../../helpers/calPercentage';
+
+
+
+
 const ProductPage = () => {
+    const [product, setProduct] = useState({});
+    const loacation = useLocation();
+    const productId = loacation.pathname.split('/')[2];
+    
+
+    useEffect(() => {
+        const details = data.find(d => d.id === Number(productId));
+        setProduct(details)
+    }, [productId])
+
+
     return (
         <div className={`${styles.product_page}`}>
             <Categories type='categories_page' />
@@ -21,14 +39,14 @@ const ProductPage = () => {
                     <div className={styles.img_}>
                         <div className={styles.img_picker}>
                             <div className={styles.img_pick}>
-                                <img src="https://rukminim1.flixcart.com/image/300/300/xif0q/headphone/j/t/c/-original-imaghbdup9jbrdzh.jpeg?q=90" alt="" />
+                                <img src={product?.img} alt="product" />
                             </div>
                             <div className={styles.img_pick}>
-                                <img src="https://rukminim1.flixcart.com/image/300/300/xif0q/headphone/j/t/c/-original-imaghbdup9jbrdzh.jpeg?q=90" alt="" />
+                                <img src={product?.img} alt="product" />
                             </div>
                         </div>
                         <div className={styles.current_image}>
-                            <img src="https://rukminim1.flixcart.com/image/300/300/xif0q/headphone/j/t/c/-original-imaghbdup9jbrdzh.jpeg?q=90" alt="" />
+                            <img src={product?.img} alt="product" />
                         </div>
                     </div>
                     <div className={styles.btns}>
@@ -38,11 +56,11 @@ const ProductPage = () => {
                 </div>
 
                 <div className={styles.right}>
-                    <h1>realme Techlife Buds T100 with up to 28 Hours Playback & AI ENC for Calls Bluetooth Headset  (Black, True Wireless)</h1>
+                    <h1>{product?.p_name}</h1>
 
                     <div className={styles.ratings}>
                         <div className={styles.stars}>
-                            <span>4.3</span>
+                            <span>{product?.ratings}</span>
                             <StarFilled className={styles.icon} />
                         </div>
                         <small className={styles.counts}>9,995 ratings and 508 reviews</small>
@@ -52,13 +70,13 @@ const ProductPage = () => {
                     </div>
 
                     <div className={styles.prices}>
-                        <span>₹ 267</span>
-                        <strike>₹ 400</strike>
-                        <small>58% off</small>
+                        <span>₹ {product?.selling_price}</span>
+                        <strike>₹ {product?.mrp}</strike>
+                        <small>{percentage(product)}% off</small>
                         <div className={styles.show_price_details}>
                             <InfoCircleOutlined className={styles.icon} />
                             <div className={styles.priceInfo}>
-                                <PriceInfo />
+                                <PriceInfo product={product}/>
                             </div>
                         </div>
                     </div>
@@ -160,7 +178,7 @@ const ProductPage = () => {
                 </div>
             </div>
             <div className={styles.bottom}>
-                <ProductSlides heading='Similar products'/>
+                <ProductSlides heading='Similar products' />
             </div>
         </div>
     )

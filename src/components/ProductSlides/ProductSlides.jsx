@@ -8,7 +8,7 @@ import {
     RightOutlined,
 } from '@ant-design/icons'
 import ProductCard from '../ProductCard/ProductCard';
-import { data } from '../ProductList/data';
+import { data } from '../../dummydata/data';
 
 function NextArrow(props) {
     const { onClick } = props;

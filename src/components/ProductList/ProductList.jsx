@@ -1,7 +1,7 @@
 import React from 'react';
 import ProductCard from '../ProductCard/ProductCard';
-import { data } from './data';
 import styles from './ProductList.module.scss';
+import { data } from '../../dummydata/data';
 
 const ProductList = () => {
     return (
