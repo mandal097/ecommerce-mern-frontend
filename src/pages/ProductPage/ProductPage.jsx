@@ -11,6 +11,7 @@ import {
 } from '@ant-design/icons';
 import PriceInfo from '../../components/PriceInfo/PriceInfo';
 import Ratings from '../../components/Ratings/Ratings';
+import ProductSlides from '../../components/ProductSlides/ProductSlides';
 const ProductPage = () => {
     return (
         <div className={`${styles.product_page}`}>
@@ -159,6 +160,7 @@ const ProductPage = () => {
                 </div>
             </div>
             <div className={styles.bottom}>
+                <ProductSlides heading='Similar products'/>
             </div>
         </div>
     )

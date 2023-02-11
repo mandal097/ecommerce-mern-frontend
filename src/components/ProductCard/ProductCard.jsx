@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import { capitalizeFirstLetter } from '../../helpers/strings';
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, width, padding }) => {
     const navigate = useNavigate();
     const [added, setAdded] = useState(false);
     const handleWishlist = (e) => {
@@ -26,7 +26,7 @@ const ProductCard = ({ product }) => {
     return (
         <>
             <ToastContainer className='toaster' />
-            <div className={styles.product_card}>
+            <div className={styles.product_card} style={{ width: width, padding: padding }}>
                 <div className={styles.wrapper}>
                     <div className={styles.img} onClick={() => navigate(`/product/kuch-bhi-lele-yaha-se`)}>
                         <div className={`${styles.wishlist} ${added && 'pop'}`} onClick={handleWishlist} >
