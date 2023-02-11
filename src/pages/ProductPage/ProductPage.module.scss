@@ -85,8 +85,8 @@
     .right {
       flex: 1.4;
       height: auto;
-      //   border: 1px solid red;
       padding: 1rem;
+      padding-bottom: 0;
       h1 {
         font-size: 1.8rem;
         font-weight: 400;
@@ -183,7 +183,7 @@
         align-items: center;
         gap: 1rem;
         margin-top: 2rem;
-        p{
+        p {
           font-size: 1.5rem;
           color: var(--error);
         }
@@ -191,13 +191,13 @@
           display: flex;
           align-items: center;
           gap: 0.3rem;
-          label{
+          label {
             font-size: 1.4rem;
             color: var(--btn);
           }
-          input{
+          input {
             padding: 0.1rem;
-            &[type='radio']{
+            &[type="radio"] {
               accent-color: var(--successLight);
             }
           }
@@ -292,6 +292,27 @@
             .value {
               flex: 2;
               color: var(--textSoft);
+            }
+          }
+        }
+      }
+      .reviews {
+        border: 1px solid var(--border);
+        height: auto;
+        .show_all_reviews {
+          height: 7rem;
+          display: flex;
+          align-items: center;
+          padding: 1rem;
+          button {
+            font-size: 1.5rem;
+            color: var(--btnLight);
+            font-weight: 400;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            border: 1px solid var(--btn);
+            &:hover {
+              background-color: var(--bgDark);
             }
           }
         }

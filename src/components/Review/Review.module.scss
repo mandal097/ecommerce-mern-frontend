@@ -1,0 +1,65 @@
+.review {
+  width: 100%;
+  height: fit-content;
+  border-bottom: 1px solid var(--bgLight);
+  padding: 2rem 1rem ;
+  padding-top: 2.5rem;
+  .ratings_ {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .stars {
+      border: 1px solid green;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      background-color: var(--success);
+      border-radius: 0.3rem;
+      padding: 0 0.4rem;
+      small {
+        font-size: 1.5rem;
+      }
+      .icon {
+        font-size: 1.5rem;
+        color: var(--text);
+      }
+    }
+    span {
+      font-size: 1.5rem;
+      color: var(--btnLight);
+    }
+  }
+  .message {
+    margin: 2rem 0;
+    p {
+      font-size: 1.5rem;
+      color: var(--textSOft);
+    }
+  }
+  .details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p{
+        font-size: 1.3rem;
+        color: var(--bgLighter);
+    }
+    .actions{
+        display: flex;
+        gap: 2rem;
+        button{
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            span{
+                font-size: 1.3rem;
+            }
+            .icon{
+                font-size:2.6rem;
+                color: var(--bgLighter);
+            }
+        }
+    }
+  }
+}

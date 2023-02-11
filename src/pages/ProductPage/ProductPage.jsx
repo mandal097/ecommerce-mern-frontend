@@ -15,6 +15,7 @@ import ProductSlides from '../../components/ProductSlides/ProductSlides';
 import { useLocation } from 'react-router-dom';
 import { data } from '../../dummydata/data';
 import { percentage } from '../../helpers/calPercentage';
+import Review from '../../components/Review/Review';
 
 
 
@@ -23,7 +24,7 @@ const ProductPage = () => {
     const [product, setProduct] = useState({});
     const loacation = useLocation();
     const productId = loacation.pathname.split('/')[2];
-    
+
 
     useEffect(() => {
         const details = data.find(d => d.id === Number(productId));
@@ -76,7 +77,7 @@ const ProductPage = () => {
                         <div className={styles.show_price_details}>
                             <InfoCircleOutlined className={styles.icon} />
                             <div className={styles.priceInfo}>
-                                <PriceInfo product={product}/>
+                                <PriceInfo product={product} />
                             </div>
                         </div>
                     </div>
@@ -174,6 +175,16 @@ const ProductPage = () => {
                     </div>
 
                     <Ratings />
+
+                    <div className={styles.reviews}>
+                        <Review />
+                        <Review />
+                        <Review />
+                        <Review />
+                        <div className={styles.show_all_reviews}>
+                            <button>All 55 reviews</button>
+                        </div>
+                    </div>
 
                 </div>
             </div>
