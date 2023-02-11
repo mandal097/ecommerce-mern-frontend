@@ -5,6 +5,14 @@ import Categories from '../../components/Categories/Categories';
 import Banner from '../../components/Banner/Banner';
 import ProductList from '../../components/ProductList/ProductList';
 
+const ProductType = ({ ele }) => {
+  return (
+    <div style={{ marginTop: '1rem' }}>
+      <span>{ele.product}</span>
+      {ele.about.split('<br/>').map(str => <p >{str}</p>)}
+    </div>
+  )
+}
 
 const Home = () => {
   return (
@@ -20,10 +28,7 @@ const Home = () => {
       <div className={styles.products_availability}>
         <h1>What Can You Buy From WeeConnect shop?</h1>
         {aboutProdutsType?.map(ele => (
-          <div key={ele.id} style={{ marginTop: '1rem' }}>
-            <span>{ele.product}</span>
-            {ele.about.split('<br/>').map(str => <p >{str}</p>)}
-          </div>
+          <ProductType key={ele.id.toString()} ele={ele} />
         ))
         }
       </div>

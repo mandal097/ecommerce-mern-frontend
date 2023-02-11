@@ -1,5 +1,6 @@
 import './App.scss';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Category from './pages/Category/Category';
@@ -15,7 +16,6 @@ function App() {
     <div>
       <BrowserRouter>
         <Navbar />
-
         <Routes>
 
           <Route path='/'>
@@ -27,11 +27,12 @@ function App() {
             <Route path='product/:productId' element={<ProductPage />} />
           </Route>
 
-             {/* ------------------------error page when routes found------------------ */}
+          {/* ------------------------error page when routes found------------------ */}
 
-             <Route path='*' element={<Error />} />
+          <Route path='*' element={<Error />} />
 
         </Routes>
+        <Footer />
 
       </BrowserRouter>
     </div>
