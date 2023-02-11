@@ -10,12 +10,15 @@ import ProductPage from './pages/ProductPage/ProductPage';
 import Error from './pages/Error/Error';
 import Profile from './pages/Profile/Profile';
 import 'react-toastify/dist/ReactToastify.css';
+import ScrollToTop from './utils/ScrollToTop';
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
+    <BrowserRouter>
+      <ScrollToTop>
+
         <Navbar />
+
         <Routes>
 
           <Route path='/'>
@@ -32,10 +35,11 @@ function App() {
           <Route path='*' element={<Error />} />
 
         </Routes>
+
         <Footer />
 
-      </BrowserRouter>
-    </div>
+      </ScrollToTop>
+    </BrowserRouter>
   );
 }
 
