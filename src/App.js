@@ -8,6 +8,7 @@ import Cart from './pages/Cart/Cart';
 import ProductPage from './pages/ProductPage/ProductPage';
 import Error from './pages/Error/Error';
 import Profile from './pages/Profile/Profile';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
             <Route path='category' element={<Category />} />
             <Route path='orders' element={<Orders />} />
             <Route path='cart' element={<Cart />} />
-            <Route path='product' element={<ProductPage />} />
+            <Route path='product/:productId' element={<ProductPage />} />
           </Route>
 
              {/* ------------------------error page when routes found------------------ */}

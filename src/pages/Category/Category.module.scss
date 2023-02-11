@@ -2,10 +2,11 @@
   height: 100vh;
   margin: 0rem auto;
   .wrapper {
-    border: 1px solid red;
+    height: auto;
     h1 {
       font-size: 3rem;
       color: var(--text);
+      font-weight: 200;
     }
   }
 }
