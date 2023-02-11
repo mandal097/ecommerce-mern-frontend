@@ -1,0 +1,156 @@
+:root {
+  --width: 13rem;
+}
+.cart_item {
+  border-bottom: 1px solid var(--border);
+  height: auto;
+  width: 100%;
+  padding: 1rem;
+  &:hover{
+    background-color: var(--bgDark);
+  }
+  &:last-child{
+    border-bottom: none;
+  }
+  .cart_item_details {
+    display: flex;
+    gap: 1.5rem;
+    .img {
+      width: var(--width);
+      height: 13rem;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .product_details {
+      flex: 2;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      .link {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: var(--textSoft);
+        font-weight: 200 !important;
+        color: var(--btnLight);
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      small {
+        font-size: 1.4rem;
+        color: var(--bgLighter);
+        margin: 1rem 0;
+      }
+      .price {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        strike {
+          color: var(--bgLighter);
+          font-size: 1.5rem;
+        }
+        b {
+          font-size: 1.8rem;
+          font-weight: 400;
+        }
+        span {
+          font-size: 1.3rem;
+          color: var(--successLight);
+        }
+      }
+    }
+    .delivery_details {
+      flex: 1;
+      height: auto;
+      p {
+        font-size: 1.4rem;
+        color: var(--textSoft);
+      }
+      span {
+        color: var(--successLight);
+        font-size: 1.5rem;
+        margin-right:1rem;
+      }
+      strike {
+        color: var(--bgLighter);
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .actions {
+    margin-top: 0.5rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    .quantity_controls {
+      width: var(--width);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer;
+      .controls {
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 1px solid var(--bgLight);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        .icon {
+          font-size: 2rem;
+        }
+      }
+      .controls_active {
+        border-color: var(--textSoft);
+        &:hover {
+          scale: 1.03;
+        }
+      }
+      .controls_in_active {
+        cursor: not-allowed;
+      }
+      .count {
+        border: 1px solid var(--border);
+        height: 2.5rem;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .remove {
+      display: flex;
+      align-items: center;
+      border-radius: 0.2rem;
+      button {
+        border: 1px solid var(--border);
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        span {
+          font-size: 1.4rem;
+          transition: all 200ms linear;
+        }
+        .icon {
+          font-size: 2.2rem;
+          color: var(--error);
+        }
+        &:hover {
+          span {
+            color: var(--error);
+            margin-left: 0.3rem;
+          }
+        }
+      }
+    }
+  }
+}
