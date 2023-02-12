@@ -14,6 +14,8 @@ import ScrollToTop from './utils/ScrollToTop';
 import Reviews from './pages/Reviews/Reviews';
 import ContactUs from './pages/ContactUs/ContactUs';
 import About from './pages/AboutUs/About';
+import Blog from './pages/Blog/Blog';
+import BlogDetails from './pages/Blog/BlogDetails';
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
             </Route>
             <Route path='contact_us' element={<ContactUs />} />
             <Route path='about_us' element={<About />} />
+            <Route path='blog' element={<Blog />} />
+            <Route path='blog/:blogId' element={<BlogDetails />} />
           </Route>
 
           {/* ------------------------error page when routes found------------------ */}
