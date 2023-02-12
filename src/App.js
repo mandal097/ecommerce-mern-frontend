@@ -17,6 +17,11 @@ import About from './pages/AboutUs/About';
 import Blog from './pages/Blog/Blog';
 import BlogDetails from './pages/Blog/BlogDetails';
 import FAQ from './pages/FAQ/FAQ';
+import Payment from './pages/Payments/Payment';
+import Shipping from './pages/Shipping/Shipping';
+import Returnspolicy from './pages/ReturnsPolicy/Returnspolicy';
+import Terms from './pages/TermsOfUse/Terms';
+import Security from './pages/Security/Security';
 
 function App() {
   return (
@@ -42,6 +47,11 @@ function App() {
             <Route path='blog' element={<Blog />} />
             <Route path='blog/:blogId' element={<BlogDetails />} />
             <Route path='faqs' element={<FAQ />} />
+            <Route path='payments' element={<Payment />} />
+            <Route path='shippings' element={<Shipping />} />
+            <Route path='returns_policy' element={<Returnspolicy />} />
+            <Route path='terms-of-use' element={<Terms />} />
+            <Route path='security' element={<Security />} />
           </Route>
 
           {/* ------------------------error page when routes found------------------ */}
