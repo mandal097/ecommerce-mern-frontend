@@ -13,6 +13,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import ScrollToTop from './utils/ScrollToTop';
 import Reviews from './pages/Reviews/Reviews';
 import ContactUs from './pages/ContactUs/ContactUs';
+import About from './pages/AboutUs/About';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
               <Route path='reviews' element={<Reviews />} />
             </Route>
             <Route path='contact_us' element={<ContactUs />} />
+            <Route path='about_us' element={<About />} />
           </Route>
 
           {/* ------------------------error page when routes found------------------ */}
