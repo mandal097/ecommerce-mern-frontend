@@ -48,7 +48,7 @@ const ContactUs = () => {
                     <div className={`${styles.stripe} ${styles.faqs}`}>
                         <p>Quick answers to the most common queries are found on our
                             {' '}  <span>Frequently Asked Questions</span> page. Check there first!</p>
-                        <button onClick={() => navigate('/shop/faqs')}>FAQs <ArrowRightOutlined className={styles.icon} /> </button>
+                        <button onClick={() => navigate('/faqs')}>FAQs <ArrowRightOutlined className={styles.icon} /> </button>
                     </div>
 
                 </div>
