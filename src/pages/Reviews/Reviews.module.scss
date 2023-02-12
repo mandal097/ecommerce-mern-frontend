@@ -1,0 +1,79 @@
+.reviews {
+  height: auto;
+  display: flex;
+  width: 95%;
+  margin: 0rem auto;
+  margin-bottom: 2rem;
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    padding-top: 2rem;
+    .img {
+      width: 25rem;
+      height: 35rem;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: var(--btnLight);
+    }
+    .ratings {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .stars {
+        border: 1px solid green;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        background-color: var(--success);
+        border-radius: 0.3rem;
+        padding: 0 0.4rem;
+        span {
+          font-size: 1.5rem;
+        }
+        .icon {
+          font-size: 1.5rem;
+          color: var(--text);
+        }
+      }
+      .counts {
+        font-size: 1.5rem;
+        color: var(--textSoft);
+      }
+      .logo {
+        .icon {
+          font-size: 2.5rem;
+          color: var(--btnLight);
+        }
+      }
+      margin-right: auto;
+    }
+    .price {
+      font-size: 1.5rem;
+      color: var(--textSoft);
+      margin-right: auto;
+    }
+  }
+  .right {
+    flex: 3;
+    border:1px solid var(--border);
+    padding-top: 2rem;
+    .name{
+      padding: 0 2rem;
+      p{
+        font-size: 2.3rem;
+        color: var(--btnLight);
+      }
+    }
+  }
+}

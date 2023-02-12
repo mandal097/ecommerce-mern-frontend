@@ -11,6 +11,7 @@ import Error from './pages/Error/Error';
 import Profile from './pages/Profile/Profile';
 import 'react-toastify/dist/ReactToastify.css';
 import ScrollToTop from './utils/ScrollToTop';
+import Reviews from './pages/Reviews/Reviews';
 
 function App() {
   return (
@@ -27,7 +28,10 @@ function App() {
             <Route path='category' element={<Category />} />
             <Route path='orders' element={<Orders />} />
             <Route path='cart' element={<Cart />} />
-            <Route path='product/:productId' element={<ProductPage />} />
+            <Route path='product/:productId/*'>
+              <Route index element={<ProductPage />} />
+              <Route path='reviews' element={<Reviews />} />
+            </Route>
           </Route>
 
           {/* ------------------------error page when routes found------------------ */}

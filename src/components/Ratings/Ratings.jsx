@@ -15,10 +15,10 @@ const Rating = ({ value, rating, count }) => {
     )
 }
 
-const Ratings = () => {
+const Ratings = ({ width, display, border, margin }) => {
     return (
-        <div className={styles.ratings_}>
-            <div className={styles.top}>
+        <div className={styles.ratings_} style={{ width: width, border: border, margin: margin }}>
+            <div className={styles.top} style={{ display }}>
                 <span>Ratings & Reviews</span>
                 <button>Rate Product</button>
             </div>
@@ -36,7 +36,7 @@ const Ratings = () => {
                     <Rating value='25' rating='2' count='1740' />
                     <Rating value='15' rating='1' count='900' />
                 </div>
-                <div className={styles.scroll_down}>
+                <div className={styles.scroll_down} style={{ display: display, border }}>
                     <span>Read Reviews</span>
                     <ArrowDownOutlined className={styles.icon} />
                 </div>

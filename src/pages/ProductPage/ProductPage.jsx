@@ -12,7 +12,7 @@ import {
 import PriceInfo from '../../components/PriceInfo/PriceInfo';
 import Ratings from '../../components/Ratings/Ratings';
 import ProductSlides from '../../components/ProductSlides/ProductSlides';
-import { useLocation } from 'react-router-dom';
+import { useLocation ,useNavigate} from 'react-router-dom';
 import { data } from '../../dummydata/data';
 import { percentage } from '../../helpers/calPercentage';
 import Review from '../../components/Review/Review';
@@ -21,8 +21,9 @@ import Review from '../../components/Review/Review';
 
 
 const ProductPage = () => {
-    const [product, setProduct] = useState({});
     const loacation = useLocation();
+    const navigate = useNavigate();
+    const [product, setProduct] = useState({});
     const productId = loacation.pathname.split('/')[2];
 
 
@@ -182,7 +183,7 @@ const ProductPage = () => {
                         <Review />
                         <Review />
                         <div className={styles.show_all_reviews}>
-                            <button>All 55 reviews</button>
+                            <button onClick={()=>navigate(`/product/${productId}/reviews`)}>All 55 reviews</button>
                         </div>
                     </div>
 
