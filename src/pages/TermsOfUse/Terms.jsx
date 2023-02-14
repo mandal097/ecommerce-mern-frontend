@@ -6,7 +6,7 @@ const Terms = () => {
         <div className={styles.terms}>
             <h1>Terms of service</h1>
 
-            <p>Throughout this website, https://weeconnect.in (“Website”), the terms <span>“WeeConnect “we”, “us”</span> and <span>“our” </span> refer to WeeConnect Coffee Private Limited</p>
+            <p>Throughout this website, https://Trendzyy.in (“Website”), the terms <span>“Trendzyy “we”, “us”</span> and <span>“our” </span> refer to Trendzyy Coffee Private Limited</p>
 
             <p>We offer this Website, including all information, tools and services available from this Website to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here. </p>
 
@@ -18,41 +18,41 @@ const Terms = () => {
 
             <p>Our E-Commerce store is hosted on <span>Google Cloud Platform</span> They provide us with the online e-commerce platform that allows us to sell our products and services to you. </p>
 
-            <p>Welcome to our Website. If you continue to browse and use this Website you are agreeing to comply with and be bound by the following terms and conditions of use, which, together with our privacy policy, govern WeeConnects’s relationship with you in regards to this Website. </p>
+            <p>Welcome to our Website. If you continue to browse and use this Website you are agreeing to comply with and be bound by the following terms and conditions of use, which, together with our privacy policy, govern Trendzyys’s relationship with you in regards to this Website. </p>
 
             <div className={styles.details}>
                 <span className={styles.heading}>1. About us</span>
                 <p>We are located at <span>145/1, Ground Floor, Shahpur Jat, 110049</span>. You can reach us by email at <span>amarnathmandal097@gmail.com</span> or by telephone at +91-8826764772 .For any business related queries, write to <span>amarnathmandal097@gmail.com</span> and for any order/product related queries, write to <span>amarnathmandal097@gmail.com</span>.</p>
-                <p>These Terms are entered between you and  <span> WeeConnect shop</span></p>
+                <p>These Terms are entered between you and  <span> Trendzyy shop</span></p>
             </div>
 
             <div className={styles.details}>
                 <span className={styles.heading}>2. Use of Website</span>
-                <p>When you use the Website or our services, you agree to use the Website and our services only for purposes that are permitted by these Terms and any applicable law, regulation or generally accepted practices or guidelines in the relevant jurisdictions. In addition, you agree that you are solely responsible for any breach of your obligations under these Terms and for the consequences (including any loss or damage which WeeConnect may suffer) of any such breach. As a condition of your use of the Website and our services, you warrant to WeeConnect that you will not use the Website or our services for any purpose that is unlawful or prohibited by these Terms. Whether on behalf of yourself or on behalf of any third-party, you agree not to:</p>
+                <p>When you use the Website or our services, you agree to use the Website and our services only for purposes that are permitted by these Terms and any applicable law, regulation or generally accepted practices or guidelines in the relevant jurisdictions. In addition, you agree that you are solely responsible for any breach of your obligations under these Terms and for the consequences (including any loss or damage which Trendzyy may suffer) of any such breach. As a condition of your use of the Website and our services, you warrant to Trendzyy that you will not use the Website or our services for any purpose that is unlawful or prohibited by these Terms. Whether on behalf of yourself or on behalf of any third-party, you agree not to:</p>
 
                 <ul>
                     <li>
                         <div className={styles.dot}></div>
-                        <p>Access or attempt to access our services and content other than through our Website, unless you have specifically been permitted to do so in a separate written agreement signed by an authorized representative of WeeConnect</p>
+                        <p>Access or attempt to access our services and content other than through our Website, unless you have specifically been permitted to do so in a separate written agreement signed by an authorized representative of Trendzyy</p>
                     </li>
                     <li>
                         <div className={styles.dot}></div>
-                        <p>Access or attempt to access our services and content other than through our Website, unless you have specifically been permitted to do so in a separate written agreement signed by an authorized representative of WeeConnect</p>
+                        <p>Access or attempt to access our services and content other than through our Website, unless you have specifically been permitted to do so in a separate written agreement signed by an authorized representative of Trendzyy</p>
                     </li>
                     <li>
                         <div className={styles.dot}></div>
-                        <p>Access or attempt to access our services and content other than through our Website, unless you have specifically been permitted to do so in a separate written agreement signed by an authorized representative of WeeConnect</p>
+                        <p>Access or attempt to access our services and content other than through our Website, unless you have specifically been permitted to do so in a separate written agreement signed by an authorized representative of Trendzyy</p>
                     </li>
                     <li>
                         <div className={styles.dot}></div>
-                        <p>Access or attempt to access our services and content other than through our Website, unless you have specifically been permitted to do so in a separate written agreement signed by an authorized representative of WeeConnect</p>
+                        <p>Access or attempt to access our services and content other than through our Website, unless you have specifically been permitted to do so in a separate written agreement signed by an authorized representative of Trendzyy</p>
                     </li>
 
                 </ul>
 
-                <p>WeeConnect reserves the right to refuse service, in its sole discretion, at any time, for any lawful reason, without notice. <span> WeeConnect shop</span> reserves the right to withdraw or amend the Website, and any service or material we provide on the Website, in its sole discretion, at any time, for any reason, without notice. However, we will try and give you reasonable notice of this by appropriate means where required.</p>
+                <p>Trendzyy reserves the right to refuse service, in its sole discretion, at any time, for any lawful reason, without notice. <span> Trendzyy shop</span> reserves the right to withdraw or amend the Website, and any service or material we provide on the Website, in its sole discretion, at any time, for any reason, without notice. However, we will try and give you reasonable notice of this by appropriate means where required.</p>
 
-                <p>TO THE EXTENT PERMITTED BY LAW, WeeConnect WILL NOT BE LIABLE IF FOR ANY REASON ALL OR ANY PART OF THE WEBSITE IS UNAVAILABLE AT ANY TIME OR FOR ANY PERIOD.</p>
+                <p>TO THE EXTENT PERMITTED BY LAW, Trendzyy WILL NOT BE LIABLE IF FOR ANY REASON ALL OR ANY PART OF THE WEBSITE IS UNAVAILABLE AT ANY TIME OR FOR ANY PERIOD.</p>
 
                 <p>FROM TIME TO TIME, WE MAY RESTRICT ACCESS TO SOME PARTS OF THE WEBSITE, OR THE WEBSITE ENTIRELY, TO USERS, INCLUDING REGISTERED USERS. We will try and give you reasonable notice of this by appropriate means where required.</p>
 
@@ -60,18 +60,18 @@ const Terms = () => {
 
             <div className={styles.details}>
                 <span className={styles.heading}>3. Placing an order</span>
-                <p>Welcome to our Website. If you continue to browse and use this Website you are agreeing to comply with and be bound by the following terms and conditions of use, which, together with our privacy policy, govern WeeConnects’s relationship with you in regards to this Website. </p>
+                <p>Welcome to our Website. If you continue to browse and use this Website you are agreeing to comply with and be bound by the following terms and conditions of use, which, together with our privacy policy, govern Trendzyys’s relationship with you in regards to this Website. </p>
                 <div className={styles.list_items}>
                     <div className={styles.dot}><div></div> Orders</div>
                     <p>You may place an order on the Website by adding the products to your cart. You are free to add or remove items from the cart.</p>
                     <p>Once the items are placed in the cart you will be required to share details such as your full name, address with pincode, phone number, email address and proceed to make payment for the order with the payment option available on our Website (refer Clause 3.2).</p>
                     <p>Once payment is made, you will receive order confirmation details and an invoice on the registered email address confirming that the order has been placed. You will then receive order dispatch information when the order is packed and ready to dispatch. This email will contain order tracking details.</p>
-                    <p>You acknowledge that WeeConnect may, in its sole discretion, at any time after receiving your order, accept or decline your order for any reason. In addition, WeeConnect may cancel your order and limit order quantity. Where your order is declined, cancelled or limited, we will inform you of this by appropriate means and you will not be charged. If, however, your order is limited or cancelled after your bank account has been charged for the purchase, WeeConnect will initiate a refund as per Clause 3.5.</p>
+                    <p>You acknowledge that Trendzyy may, in its sole discretion, at any time after receiving your order, accept or decline your order for any reason. In addition, Trendzyy may cancel your order and limit order quantity. Where your order is declined, cancelled or limited, we will inform you of this by appropriate means and you will not be charged. If, however, your order is limited or cancelled after your bank account has been charged for the purchase, Trendzyy will initiate a refund as per Clause 3.5.</p>
                 </div>
 
                 <div className={styles.list_items}>
                     <div className={styles.dot}><div></div> Payment</div>
-                    <p>In order to place an order with WeeConnect, you must provide us with your name, email, shipping address, phone number and payment information. You represent and warrant that the information provided by you to WeeConnect is accurate and complete and you are authorized to use such payment methods for the purchase.</p>
+                    <p>In order to place an order with Trendzyy, you must provide us with your name, email, shipping address, phone number and payment information. You represent and warrant that the information provided by you to Trendzyy is accurate and complete and you are authorized to use such payment methods for the purchase.</p>
                     <p>The following payment methods are currently available on our Website:</p>
 
                     <div className={styles.dot}><div></div>Debit Card </div>
@@ -99,7 +99,7 @@ const Terms = () => {
 
                 <div className={styles.list_items}>
                     <div className={styles.dot}><div></div> Cancellation</div>
-                    <p>You may cancel your order for a product at no cost any time before the order has been processed and shipped. If an order is cancelled after the order has been processed and shipped, WeeConnect will charge a cancellation fee in lieu of the charges borne by it to cancel such order on your behalf.</p>
+                    <p>You may cancel your order for a product at no cost any time before the order has been processed and shipped. If an order is cancelled after the order has been processed and shipped, Trendzyy will charge a cancellation fee in lieu of the charges borne by it to cancel such order on your behalf.</p>
                 </div>
 
                 <div className={styles.list_items}>

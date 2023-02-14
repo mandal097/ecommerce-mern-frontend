@@ -29,7 +29,7 @@ const FAQSTRIPE = () => {
     return (
         <div className={styles.faq_stripe}>
             <div className={styles.ques}>
-                <p>What is Cold Brew Coffee? Why should I opt for this?</p>
+                <p>What is Cold Trendzyy? Why should I opt for this?</p>
                 <div className={styles.controls} onClick={handleClick}>
                     {arrowDir === 'up'
                         ? <UpOutlined className={styles.icon} />

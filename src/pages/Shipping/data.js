@@ -4,7 +4,7 @@ export const shippings = [
         topic: 'What are the delivery charges?',
         desc: [
             "Sellers incur relatively higher shipping costs on low value items. In such cases, charging a nominal delivery charge helps them offset logistics costs. Please check your order summary to understand the delivery charges for individual products.",
-            "For Products listed as WeeConnect Plus, a Rs 40 charge for delivery per item may be applied if the order value is less than Rs 500. While, orders of Rs 500 or above are delivered free."
+            "For Products listed as Trendzyy Plus, a Rs 40 charge for delivery per item may be applied if the order value is less than Rs 500. While, orders of Rs 500 or above are delivered free."
         ]
     },
     {
@@ -61,8 +61,8 @@ export const shippings = [
     },
     {
         id: 11,
-        topic: `Does WeeConnect deliver internationally?`,
-        desc: ["As of now, WeeConnect doesn't deliver items internationally."]
+        topic: `Does Trendzyy deliver internationally?`,
+        desc: ["As of now, Trendzyy doesn't deliver items internationally."]
     },
 
 ]

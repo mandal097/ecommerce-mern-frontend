@@ -18,7 +18,7 @@ const Navbar = () => {
             <div className={styles.navbar}>
                 <div className={styles.logo} onClick={() => navigate('/')}>
                     <QqOutlined className={styles.icon} />
-                    <span>Shopname</span>
+                    <span>Trendzyy</span>
                 </div>
                 <div className={styles.middle}>
                     <SearchOutlined className={styles.icon} />
